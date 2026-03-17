@@ -1,4 +1,9 @@
 using System.Reflection;
+using LibraryCheckout.Api.Data;
+using LibraryCheckout.Api.Data.Seed;
+using LibraryCheckout.Api.Features.Books;
+using LibraryCheckout.Api.Features.Checkouts;
+using LibraryCheckout.Api.Features.Members;
 using Microsoft.OpenApi.Models;
 
 namespace LibraryCheckout.Api.Core.Extensions;
@@ -9,6 +14,10 @@ public static class ServiceCollectionExtensions
     {
         services.AddProblemDetails();
         services.AddEndpointsApiExplorer();
+        services.AddSingleton(_ => LibraryDataSeeder.CreateStore());
+        services.AddSingleton<BooksService>();
+        services.AddSingleton<MembersService>();
+        services.AddSingleton<CheckoutService>();
 
         return services;
     }
