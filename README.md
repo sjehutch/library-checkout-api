@@ -110,3 +110,13 @@ Paste the id → Execute
 - Add a database  
 - Add tests  
 - Add authentication  
+- Add interfaces or a strategy approach if the checkout rules started to vary by member type, book type, or branch  
+
+
+## 🧪 Run tests
+
+```bash
+dotnet test
+```
+
+👉 Runs a small set of unit tests that validate core business rules.
