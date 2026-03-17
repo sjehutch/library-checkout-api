@@ -1,8 +1,25 @@
+# Build outputs
 bin/
 obj/
+
+# IDE
 .vs/
 .vscode/
+
+# User-specific files
 *.user
 *.suo
+
+# Logs
 *.log
+
+# Test results
 TestResults/
+
+# OS files
+.DS_Store
+
+# Coverage (just in case)
+coverage/
+*.coverage
+*.coveragexml
