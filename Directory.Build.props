@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <!-- Enable modern C# safety -->
+    <Nullable>enable</Nullable>
+
+    <!-- Reduce boilerplate -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Enforce clean builds -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- Deterministic builds -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+</Project>
